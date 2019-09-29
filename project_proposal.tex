@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage[margin=0.75in]{geometry}
+
+\begin{document}
+
+\begin{center}
+    \LARGE{\textbf{ORIE 4741 Project Proposal}} \\
+    \vspace{1em}\\
+    \LARGE{Hospital Admissions} \\
+    \vspace{1em}\\
+    \normalsize{Yubin Kim (ytk3) \& Maggie Liu (ml958)}
+\end{center}
+
+
+\section{Introduction}
+
+ Hospital administrations struggle to balance the financial challenges as well as quality patient care. One problem faced by hospitals is when to release patients. The traffic received in intensive care units and inpatient units at hospitals make it impossible to ensure high quality and efficient service for all patients. 
+ 
+ Therefore discharged patients may end up re-admitting because they were unable to receive the full care necessary. The percentage of patients that return after discharge is called the re-admission rate. 
+ 
+ \section{Question}
+ 
+ We would like to try and predict the re-admission rate for individual patients as well as evaluate any trends that can be seen in the data.
+
+
+\section{Data}
+We are using the dataset \href{https://mimic.physionet.org}{MIMIC III} from the MIT Lab for Computational Physiology. The tables of interest include admissions data, final diagnoses, and ICU stays.
+
+In the table with admissions, the data includes features such as the patient ID, date/times of admittance, discharge, and death (if the patient died during their stay at the hospital), what type of admittance (emergency, newborn, etc.) and the location or method at which they were admitted (transfer, emergency room, etc.). Other features include patient demographics such as insurance, marital status, etc. Another feature of interest includes an initial diagnosis.
+
+Similar to admissions data, there is another table with information on ICU stays with in/out times and length of stay, ICU units that the patient was treated in, etc.
+
+There is a table with final diagnoses that has standardized ICD (International Classification of Diseases) diagnosis codes for each unique patient and hospital stay as well as a priority ranking for multiple diagnoses.
+\begin{itemize}
+    \item https://mimic.physionet.org
+\end{itemize}
+
+
+\end{document}
